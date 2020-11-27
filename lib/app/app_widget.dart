@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class TddCoachApp extends StatelessWidget {
@@ -6,8 +5,23 @@ class TddCoachApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Placeholder(),
+    final defaultTheme = ThemeData(
+      primarySwatch: Colors.indigo,
+      accentColor: Colors.deepOrange,
+      visualDensity: VisualDensity.adaptivePlatformDensity,
+      brightness: Brightness.light,
+    );
+
+    return MaterialApp(
+      title: 'TDD Coach',
+      themeMode: ThemeMode.system,
+      theme: defaultTheme.copyWith(
+        brightness: Brightness.light,
+      ),
+      darkTheme: defaultTheme.copyWith(
+        brightness: Brightness.dark,
+      ),
+      home: Placeholder(),
     );
   }
 }
