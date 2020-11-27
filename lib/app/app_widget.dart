@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tdd_coach/home/home_widget.dart';
 
 class TddCoachApp extends StatelessWidget {
   const TddCoachApp({Key key}) : super(key: key);
@@ -21,7 +22,7 @@ class TddCoachApp extends StatelessWidget {
       darkTheme: defaultTheme.copyWith(
         brightness: Brightness.dark,
       ),
-      home: Placeholder(),
+      home: HomeWidget(),
     );
   }
 }
