@@ -2,6 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:tdd_coach/home/home_widget.dart';
 
 class TddCoachApp extends StatelessWidget {
+  get defaultTheme => ThemeData(
+    primarySwatch: Colors.indigo,
+    accentColor: Colors.deepOrange,
+    visualDensity: VisualDensity.adaptivePlatformDensity,
+    brightness: Brightness.light,
+  );
+
   const TddCoachApp({Key key}) : super(key: key);
 
   @override

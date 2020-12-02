@@ -8,16 +8,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:tdd_coach/app/app_widget.dart';
-import 'package:tdd_coach/home/home_widget.dart';
+import 'package:tdd_coach/slot_wheel/slot_wheel_widget.dart';
 
 void main() {
-  testWidgets('Home Page Structure', (WidgetTester tester) async {
+  testWidgets('Wheel scroll', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(TddCoachApp());
 
-    expect(find.byType(HomeWidget), findsOneWidget);
-    expect(find.byType(SafeArea), findsOneWidget);
-    expect(find.byType(Scaffold), findsOneWidget);
+    expect(find.byType(SlotWheelWidget), findsOneWidget);
+    expect(find.byType(Placeholder), findsWidgets); // todo: remove after development phase
+    expect(find.byType(ListWheelScrollView), findsOneWidget);
   });
 }
 
