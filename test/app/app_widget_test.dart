@@ -4,7 +4,7 @@ import 'package:tdd_coach/app/app_widget.dart';
 
 
 void main() {
-  testWidgets('Bootstrap', (WidgetTester tester) async {
+  testWidgets('App Bootstrap', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(TddCoachApp());
 

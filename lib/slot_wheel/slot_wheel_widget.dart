@@ -8,12 +8,12 @@ class SlotWheelWidget extends StatelessWidget {
     return ListWheelScrollView(
       itemExtent: 200,
       children: [
-        Placeholder(),
-        Placeholder(color: Colors.amber,),
-        Placeholder(color: Colors.blue,),
-        Placeholder(color: Colors.red),
-        Placeholder(color: Colors.green),
-        Placeholder(color: Colors.orange),
+        const Placeholder(color: Colors.orange),
+        const Placeholder(color: Colors.green),
+        const Placeholder(color: Colors.red),
+        const Placeholder(color: Colors.blue,),
+        const Placeholder(color: Colors.yellow,),
+        const Placeholder(color: Colors.deepPurple),
       ],
     );
   }
